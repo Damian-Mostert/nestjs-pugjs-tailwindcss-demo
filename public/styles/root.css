@@ -1,0 +1,23 @@
+@import './buttons.css';
+@import './forms.css';
+@import './input.css';
+@import './accordion.css';
+@import './modal.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --main-bg: #000000;
+    --main-bg-fg: #434343;
+    --main-fg: #ffffff;
+    --main-accent1: #cae962;
+}
+
+body {
+    @apply bg-main-bg text-main-fg;
+}
+header,footer {
+    @apply bg-main-bg-fg;
+}

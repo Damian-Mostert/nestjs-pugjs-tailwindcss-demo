@@ -1,0 +1,8 @@
+include components/head.pug
+body
+  include components/header.pug
+  main.p-4.flex.flex-col.gap-4.min-h-screen
+      .text-2xl.text-center Hi #{user.firstName} #{user.lastName}
+      button(size="md" variant="bg" onclick="window.location.href=`/settings`") Settings
+      button(size="md" variant="bg" onclick="window.location.href=`/logout`") Logout
+  include components/footer.pug

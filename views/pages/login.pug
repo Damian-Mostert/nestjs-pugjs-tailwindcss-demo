@@ -1,0 +1,10 @@
+include components/head.pug
+body
+  include components/header.pug
+  main
+    div.w-screen.h-screen.flex.justify-center.items-center
+      div.bg-main-bg-fg.p-4.w-128.rounded-lg.flex.flex-col.gap-4
+        h2.text-2xl Login
+        != Form({action: '/login',method: 'POST',input: {size: "md",variant: "bg"},fields: [{ name: 'email', type: 'email', label: 'Email', required: true },{ name: 'password', type: 'password', label: 'Password', required: true }],button: {size: "md",variant: "bg"}})
+        a.pt-4(href="/register") Don't have an account? Register.
+  include components/footer.pug

@@ -1,0 +1,12 @@
+form[variant="default"]{
+    @apply flex flex-col gap-4;
+}
+form[variant="default"] .form-section{
+    @apply flex flex-col gap-2;
+}
+form[variant="default"] .form-section div[error="true"]{
+    @apply p-0 text-red-400;
+}
+form[variant="default"] .form-section div[error="true"] span{
+    @apply font-thin;
+}

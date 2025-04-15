@@ -1,0 +1,49 @@
+.accordion-item {
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Button (Accordion Header) */
+.accordion-item button {
+    width: 100%;
+    padding: 1rem;
+    background: #f4f4f4;
+    border: none;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.accordion-item button:hover {
+    background: #e0e0e0;
+}
+
+/* Content */
+.accordion-content {
+    padding: 1rem;
+    background: white;
+    border-top: 1px solid #ddd;
+}
+
+/* Variants */
+.accordion-variant-default {
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+.accordion-variant-bordered {
+    border: 2px solid #007BFF;
+}
+
+.accordion-variant-shadow {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Smooth open/close transition (optional, with x-transition) */
+[x-cloak] {
+    display: none;
+}

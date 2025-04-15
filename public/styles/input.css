@@ -1,0 +1,15 @@
+input[size="sm"]{
+    @apply px-2 py-1 text-sm;
+}
+input[size="md"]{
+    @apply px-4 py-2 text-base;
+}
+input[size="lg"]{
+    @apply px-8 py-4 text-lg;
+}
+input[variant="default"]{
+    @apply bg-main-bg-fg rounded-md text-main-fg;
+}
+input[variant="bg"]{
+    @apply bg-main-bg rounded-md text-main-fg;
+}

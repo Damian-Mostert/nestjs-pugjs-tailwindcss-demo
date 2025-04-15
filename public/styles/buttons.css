@@ -1,0 +1,22 @@
+button[size="sm"]{
+    @apply px-2 py-1 text-sm;
+}
+button[size="md"]{
+    @apply px-4 py-2 text-base;
+}
+button[size="lg"]{
+    @apply px-8 py-4 text-lg;
+}
+button[variant="test"]{
+    @apply bg-main-bg-fg rounded-md transition-all text-main-fg;
+}
+button[variant="test"]:hover{
+    background-color: var(--accent1);
+}
+button[variant="bg"]{
+    @apply bg-main-bg rounded-sm cursor-pointer transition-all text-main-fg;
+}
+
+button[variant="bg"]:hover{
+    @apply bg-main-accent1;
+}

@@ -1,0 +1,20 @@
+head
+    if typeof meta != "undefined"
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="description" content=meta.description || 'Default description here')
+        meta(name="keywords" content=meta.keywords || 'ejs, alpinejs, node, express')
+        meta(name="author" content=meta.author || 'Your Name or Company')
+        meta(property="og:title" content=meta.title || 'Page Title')
+        meta(property="og:description" content=meta.description || 'Default description here')
+        meta(property="og:image" content=meta.image || '/default-og-image.png')
+        meta(property="og:url" content=meta.url || 'https://example.com')
+        meta(property="og:type" content="website")
+        meta(name="twitter:card" content="summary_large_image")
+        meta(name="twitter:title" content=meta.title || 'Page Title')
+        meta(name="twitter:description" content=meta.description || 'Default description here')
+        meta(name="twitter:image" content=meta.image || '/default-twitter-image.png')
+        title= meta.title || 'My Website'
+    link(rel="stylesheet" href="/dist/output.css")
+    script(src="/dist/cdn.min.js" defer)

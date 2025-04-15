@@ -1,0 +1,6 @@
+extends ../layout/main.pug
+.min-h-screen.p-4
+  each settingKey in Object.keys(user.settings).filter(s => s !== 'id')
+    .mb-4
+      div #{settingKey}
+      div #{user.settings[settingKey]}
